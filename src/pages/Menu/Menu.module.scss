@@ -1,4 +1,28 @@
+@import '../../styles/_variables';
+
 .menu {
-    padding: 0 250px;
-    text-align: center;    
+    padding: 20px $padding_horizontal;
+}
+
+.header {
+    height: 300px;
+    background-image: url('../../assets/menu/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 $padding_horizontal;
+
+    &__text {
+        color: white;
+        font-size: 5rem;
+        width: 40%;
+        min-width: 400px;
+    }
+}
+
+.menu {
+    &__title {
+        font-size: 2rem;
+    }
 }
