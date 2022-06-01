@@ -25,4 +25,12 @@
     &__title {
         font-size: 2rem;
     }
+    &__filters {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 100%;
+      }
 }
