@@ -16,12 +16,14 @@
     height: 40px;
     justify-content: center;
     width: 150px;
-    &--active {
-      background-color: $blue;
-      color: white;
-    }
+    transition: all 0.5s;
     &:hover {
       cursor: pointer;
+      background: $dark-gray;
+    }
+    &--active {
+      background-color: $blue !important; 
+      color: white;
     }
   }
 }

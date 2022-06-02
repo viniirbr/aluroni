@@ -3,11 +3,18 @@ import logo from '../../assets/logo.svg'
 import { SearchField } from './SearchField'
 import { useState } from 'react'
 import { Filters } from './Filters';
+import { Sorter } from './Sorter';
+
+export type ISorter = {
+  name: string,
+  value: string
+}
 
 export default function Menu() {
 
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<number | null>(null);
+  const [sorter, setSorter] = useState<ISorter>({name: '', value: ''});
 
   return (
     <main>
@@ -22,6 +29,7 @@ export default function Menu() {
         <SearchField search={search} setSearch={setSearch} />
         <div className={styles.menu__filters}>
           <Filters filter={filter} setFilter={setFilter}/>
+          <Sorter sorter={sorter} setSorter={setSorter}/>
         </div>
       </section>
     </main>
