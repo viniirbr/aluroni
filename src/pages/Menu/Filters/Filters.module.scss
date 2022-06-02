@@ -7,15 +7,15 @@
   margin: 20px 0;
   &__filter {
     align-items: center;
-    background-color: $gray;
+    background: $gray;
     border: none;
     border-radius: 4px;
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     height: 40px;
     justify-content: center;
-    width: 150px;
+    width: 130px;
     transition: all 0.5s;
     &:hover {
       cursor: pointer;

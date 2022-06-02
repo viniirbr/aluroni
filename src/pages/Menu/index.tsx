@@ -4,6 +4,7 @@ import { SearchField } from './SearchField'
 import { useState } from 'react'
 import { Filters } from './Filters';
 import { Sorter } from './Sorter';
+import { Items } from './Items';
 
 export type ISorter = {
   name: string,
@@ -31,6 +32,7 @@ export default function Menu() {
           <Filters filter={filter} setFilter={setFilter}/>
           <Sorter sorter={sorter} setSorter={setSorter}/>
         </div>
+        <Items />
       </section>
     </main>
   )
