@@ -1,18 +1,13 @@
 import { Item } from './Item'
 import menu from './menu.json'
+import styles from './Items.module.scss'
 
 export function Items() {
     return (
-        <div>
-            {menu.map(({ id, title, description, size, serving, price, category }) =>
+        <div className={styles.items}>
+            {menu.map((item) =>
                 <Item
-                key={id}
-                title={title}
-                description={description}
-                size={size}
-                serving={serving}
-                price={price}
-                category={category}/>)
+                {...item}/>)
             }
         </div>
     )
